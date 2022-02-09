@@ -53,6 +53,7 @@ mixin MockLocation implements Location {
 
   static Location fetchAny() {
     int max = items.length;
+    // int randomNumber = Random().nextInt(max);
     int randomNumber = Random().nextInt(max) + 1;
     return items[randomNumber];
   }
